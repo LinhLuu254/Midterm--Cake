@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+    <script src="midterm.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Cakes' list</h2>
+        <div class="cakesList"></div>
+        <div class="selectTasks">
+            <h2>What would you like to to?</h2>
+            <ul>
+                <li>Create a cake - C</li>
+                <li>Read details of the cake - R</li>
+                <li>Update the details for a cake - U</li>
+                <li>Delete a cake - D</li>
+            </ul>
+            <label for="task">Task's code:</label>
+            <input type="text" id="task" name="task" maxlength="10" size="10"></input>
+            <button onclick="showInfo()">Click for information!</button>
+            <p class="selectedTask"></p>
+        </div>
+    </div>   
+    
+</body>
+</html>
