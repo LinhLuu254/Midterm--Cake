@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm</title>
+    <title>Cakester</title>
     <script src="midterm.js" defer></script>
-</head>
+    <link rel="stylesheet" href="midterm.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 <body>
-    <div class="wrapper">
-        <h2>Cakes' list</h2>
-        <div class="cakesList"></div>
+    <header>
+        <h1>The Cakester</h1>
+    </header>
+        <div class="wrapper">
+            <div class="pic">
+                <h2>Cakes' list</h2>
+                <div class="cakesList"></div>
+            </div>
+    <aside>
         <div class="selectTasks">
+
             <h2>What would you like to to?</h2>
+            <br>
             <ul>
-                <li>Create a cake - C</li>
-                <li>Read details of the cake - R</li>
-                <li>Update the details for a cake - U</li>
-                <li>Delete a cake - D</li>
+                <li>Create a cake - <span>C</span></li><br>
+                <li>Read details of the cake - <span>R</span></li><br>
+                <li>Update the details for a cake - <span>U</span></li><br>
+                <li>Delete a cake - <span>D</span></li><br>
             </ul>
-            <label for="task">Task's code:</label>
-            <input type="text" id="task" name="task" maxlength="10" size="10"></input>
+            <br>
+            <label for="task">Enter the task's code:</label>
+            <input type="text" id="task" name="task" maxlength="10" size="10" placeholder="C, R, U or D"></input>
             <button onclick="showInfo()">Click for information!</button>
-            <p class="selectedTask"></p>
+            <br>
+        <div class="selectedTask"></div>
+        <div> <img class="cakesPic" alt="Cake"/></div>    
         </div>
+    </aside>
     </div>   
     
 </body>
